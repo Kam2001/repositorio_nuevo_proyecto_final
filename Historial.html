@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/Style/Menu.css">
+    <link rel="stylesheet" href="/Style/DataTable.css">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+</head>
+ <body id="body">
+        <header>
+            <div class="icon__menu">
+                <i class="fas fa-bars" id="btn_open"></i> 
+            </div>
+        </header>
+    
+        <div class="menu__side" id="menu_side"> <!-- => <nav class="sidebar close"> -->
+    
+            <div class="name__page">
+                <i class='bx bx-plus-medical'></i>
+                <h4>Cuenca hospital</h4>
+            </div>
+    
+            <div class="options__menu">	<!-- =>  <div class="menu-bar"> -->
+    
+                <a href="MenuRespo.html" class="selected">
+                    <div class="option">
+                        <i class="fas fa-home" title="Inicio"></i>
+                        <h4>Inicio</h4>
+                    </div>
+                </a>
+    
+                <a href="DataTable.html">
+                    <div class="option">
+                        <i class="far fa-id-badge" title="Pacientes"></i>
+                        <h4>Pacientes</h4>
+                    </div>
+                </a>
+    
+                <a href="Historial.html">
+                    <div class="option">
+                        <i class='bx bx-search' title="Filtro"></i>
+                        <h4>Historial</h4>
+                    </div>
+                </a>
+    
+    
+                <a href="FichaMedica.html">
+                    <div class="option">
+                        <i class="far fa-address-card" title="Ficha Medica"></i>
+                        <h4>Ficha Medica</h4>
+                    </div>
+                </a>
+    
+                <a href="index.html">
+                    <div class="option">
+                        <i class='bx bx-exit' title="Salir"></i>
+                        <h4>Salir</h4>
+                    </div>
+                </a>
+    
+            </div>
+            
+         </div>
+       
+
+        <!-- ------------------------------------ BUSCADOR --------------------------------   -->
+        <div class="conteinerHistori">
+            <form class="search-table-2">
+                <caption>Historial del paciente</caption>
+                <input class="search-2" data-table="table-id" type="text" placeholder="Filtrar por fecha">
+               <button class="btn-Agregar" type="submit" name="Agregar"><b>Agregar<i class='bx bx-user-plus'></i></b> </button>               
+               <!-- <div class="btn-2">
+                <ul>
+                    <li><a href="#" class="btn-Agregar"><p>Agregar</p><i class='bx bx-user-plus'></i></li>
+                </ul>
+            </div>-->
+            </form>
+        </div>
+       
+        
+        
+        <!-- ------------------------------------ TABLA --------------------------------   -->
+    <div class="conteiner">
+        <table class="table-2 table-id">
+            
+            <!--<caption>Lista de Pacientes</caption>-->
+            
+            <thead>
+                
+                <tr>
+                    
+                    <th>Nombre y apllido</th>
+                    <th>DNI</th>
+                    <th>Genero</th>
+                    <th>Telefono</th>
+                    <th>Domicilio</th>
+                    <th>Dia de consulta</th>
+                    <th>Motivo</th>
+                    <th>Sector</th>
+                    <th>Opciones</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                 
+                <tr>
+                    <td data-label="Nombre y apllido">Maria Some</td>
+                    <td data-label="DNI">0000</td>
+                    <td data-label="Genero">G</td>
+                    <td data-label="Telefono">0000</td>
+                    <td data-label="Domicilio">0000</td>
+                    <td data-label="Dia de consulta">0/0/12</td>
+                    <td data-label="Motivo">0000</td>
+                    <td data-label="Sector">0000</td>
+                    <td data-label="Opciones"><div class="btn">
+                        <ul>
+                            <li><a href="#" class="btn-editar"><i class='bx bxs-edit'></i></a></li>
+                            <li><a href="#" class="btn-trash"><i class='bx bxs-trash'></i></a></li>
+                        </ul>
+                    </div>
+                    </td>
+                
+                </tr>
+                <tr>
+                    <td data-label="Nombre y apllido">Maria Some</td>
+                    <td data-label="DNI">0000</td>
+                    <td data-label="Genero">G</td>
+                    <td data-label="Telefono">0000</td>
+                    <td data-label="Domicilio">0000</td>
+                    <td data-label="Dia de consulta">0/0/12</td>
+                    <td data-label="Motivo">0000</td>
+                    <td data-label="Sector">0000</td>
+                    <td data-label="Opciones"><div class="btn">
+                        <ul>
+                            <li><a href="#" class="btn-editar"><i class='bx bxs-edit'></i></a></li>
+                            <li><a href="#" class="btn-trash"><i class='bx bxs-trash'></i></a></li>
+                        </ul>
+                    </div>
+                    </td>
+                
+                </tr>
+                <tr>
+                    <td data-label="Nombre y apllido">Maria Some</td>
+                    <td data-label="DNI">0000</td>
+                    <td data-label="Motivo de Consulta">0000</td>
+                    <td data-label="Dia de consulta">0/0/12</td>
+                    <td data-label="Opciones"><div class="btn">
+                        <ul>
+                            <li><a href="#" class="btn-editar"><i class='bx bxs-edit'></i></a></li>
+                            <li><a href="#" class="btn-trash"><i class='bx bxs-trash'></i></a></li>
+                        </ul>
+                    </div>
+                    </td>
+                
+                </tr>
+            
+            </tbody>
+        </table>
+     </div>
+      <script src="/js/script3.js"></script>
+</body>
+</html>

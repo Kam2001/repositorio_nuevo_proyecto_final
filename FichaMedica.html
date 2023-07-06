@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Ficha</title>
+    <link rel="stylesheet" href="/Style/Menu.css">
+    <link rel="stylesheet" href="/Style/DataTable.css">
+    <link rel="stylesheet" href="/Style/Ficha.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src=""></script>
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+</head>
+<body id="body">
+    <header>
+        <div class="icon__menu">
+            <i class="fas fa-bars" id="btn_open"></i> 
+        </div>
+    </header>
+
+    <div class="menu__side" id="menu_side"> <!-- => <nav class="sidebar close"> -->
+
+        <div class="name__page">
+            <i class='bx bx-plus-medical'></i>
+            <h4>Cuenca hospital</h4>
+        </div>
+
+        <div class="options__menu">	<!-- =>  <div class="menu-bar"> -->
+
+            <a href="MenuRespo.html" class="selected">
+                <div class="option">
+                    <i class="fas fa-home" title="Inicio"></i>
+                    <h4>Inicio</h4>
+                </div>
+            </a>
+
+            <a href="DataTable.html">
+                <div class="option">
+                    <i class="far fa-id-badge" title="Pacientes"></i>
+                    <h4>Pacientes</h4>
+                </div>
+            </a>
+
+            <a href="Historial.html">
+                <div class="option">
+                    <i class='bx bx-search' title="Filtro"></i>
+                    <h4>Historial</h4>
+                </div>
+            </a>
+
+            <a href="FichaMedica.html">
+                <div class="option">
+                    <i class="far fa-address-card" title="Ficha Medica"></i>
+                    <h4>Ficha Medica</h4>
+                </div>
+            </a>
+
+            <a href="index.html">
+                <div class="option">
+                    <i class='bx bx-exit' title="Salir"></i>
+                    <h4>Salir</h4>
+                </div>
+            </a>
+
+        </div>
+        
+     </div>
+   
+
+
+    <!-- ------------------------------------ FICHA --------------------------------   -->
+    <main role="main">
+
+        <section class="content-form">
+
+            <h2 class="sub-title">DATOS GENERALES</h2>
+
+            <form action="" method="POST" id="registrar-form">
+
+                <div class="form-group width-12">
+                    <div class="width-6">
+                        <input type="text" placeholder="Nombre *" class="form-control" name="nombre" id="nombre" />
+                    </div>
+                    <div class="width-6">
+                        <input type="text" placeholder="Apellidos *" class="form-control" name="apellidos" id="apellidos" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="width-12">
+                        <input type="text" placeholder="Dirección *" class="form-control" name="direccion"
+                            id="direccion" />
+                    </div>
+                </div>
+                <div class="form-group width-12">
+                    <div class="width-6">
+                        <input type="number" placeholder="DNI *" class="form-control" name="DNI"
+                            id="DNI" />
+                    </div>
+        
+                <div class="form-group width-12">
+                    <div class="width-6">
+                        <input type="number" placeholder="Teléfono *" class="form-control" name="telefono"
+                            id="telefono" />
+                    </div>
+                    <div class="width-6">
+                        <input type="number" placeholder="Edad" min="18" max="35" class="form-control" value="18"
+                            name="edad" id="edad" />
+                    </div>
+                </div>
+                <!------------------------------SELECTORES---------------------------------------------->
+
+          <!------------------------------GENERO---------------------------------------------->
+                <div class="form-group width-12">
+                    <h3 class="sub-form">Genero</h3>
+                    <div class="width-4">
+                        <label for="femenino"><input type="radio" id="femenino" name="Genero"
+                                value="femenino" />Femenino</label>
+                    </div>
+                    <div class="width-4">
+                        <label for="masculino"><input type="radio" id="masculino" name="Genero"
+                                value="masculino" />Masculino</label>
+                    </div>
+                    <div class="width-4">
+                        <label for="indefinido"><input type="radio" id="indefinido" name="Genero" value="indefinido" />Indefinido</label>
+                    </div>
+                </div>
+         <!------------------------------ANTECEDENTES---------------------------------------------->
+                <div class="form-group width-12">
+                    <h3 class="sub-form">Antecedentes</h3>
+                    <div class="width-4">
+                        <label for="HTA"><input type="checkbox" id="HTA" name="Antecedentes" value="HTA" />HTA</label>
+                    </div>
+                    <div class="width-4">
+                        <label for="DBT"><input type="checkbox" id="DBT" name="Antecedentes" value="DBT" />DBT</label>
+                    </div>
+                    <div class="width-4">
+                        <label for="TBQ/EX TBQ"><input type="checkbox" id="TBQ/EX TBQ" name="Antecedentes"
+                                value="TBQ/EX TBQ" />TBQ/EX TBQ</label>
+                    </div>
+                </div>
+                <div class="width-4">
+                    <label for="respiratorios"><input type="checkbox" id="respiratorios" name="Antecedentes"
+                        value="respiratorios" />Respiratorios</label>
+                </div>
+                <div class="width-4">
+                    <label for="cardiologicos"><input type="checkbox" id="cardiologicos" name="Antecedentes"
+                        value="Cardiologicos" />Cardiologicos</label>
+                </div>
+                <div class="width-4">
+                    <label for="otros"><input type="checkbox" id="otros" name="Antecedentes"
+                        value="otros" />Otros</label>
+                </div>
+
+                </div>
+          <!------------------------------GENERO---------------------------------------------->
+                <div class="form-group width-12">
+                    <h3 class="sub-form">Areas de Trabajo</h3>
+
+                    <div class="width-4">
+                        <label for="programador"><input type="checkbox" id="programador" name="programador" checked
+                                value="programador" />Programador</label>
+                    </div>
+                    <div class="width-4">
+                        <label for="disenador"><input type="checkbox" id="disenador" name="disenador"
+                                value="disenador" />Diseñador</label>
+                    </div>
+                    <div class="width-4">
+                        <label for="soporte"><input type="checkbox" id="soporte" name="soporte"
+                                value="soporte" />Soporte</label>
+                    </div>
+
+                <!------------------------FECHA DE INGRESO Y EGRESO---------------------------------------------------->
+                </div>
+                <div class="form-group width-12">
+                    <h3 class="sub-form">Fecha de ingreso</h3>
+                    <input type="date" nombre="fecha" min="2017-06-01" max="2017-12-31" value="2017-06-01" step="1"
+                        class="form-control" />
+                </div>
+                <div class="form-group width-12">
+                    <h3 class="sub-form">Fecha de Egreso</h3>
+                    <input type="date" nombre="fecha" min="2017-06-01" max="2017-12-31" value="2017-06-01" step="1"
+                        class="form-control" />
+                </div>
+               <!------------------------FECHA DE INGRESO Y EGRESO---------------------------------------------------->
+                <div class="form-group width-12">
+                    <h3 class="sub-form">Descripción General</h3>
+                    <textarea cols="22" rows="10" class="form-control">
+
+				  </textarea>
+                </div>
+                <div class="form-group width-12">
+                    <input type="submit" value="REGISTRAR" class="form-control btn btn-principal" id="btn-registrar" />
+
+                </div>
+
+            </form>
+
+        </section>
+    </main>
+    <script src="/js/script3.js"></script>
+</body>
+
+</html>
